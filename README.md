@@ -6,7 +6,10 @@
 2. [Dataset Description](#Dataset-Description)
 3. [Problem Statement](#Problem-Statement)
 4. [Evaluation Matrix](#Evaluation-Matrix)
-5. [Accuracy & Loss Graphs](#Accuracy-&-Loss-Graphs)
+5. [Installation](#installation)
+6. [Usage](#usage)
+7. [Performance](#Performance)
+8. [Accuracy & Loss Graphs](#Accuracy-&-Loss-Graphs)
 
 ## Introduction
 
@@ -25,6 +28,29 @@ The main objective of this project is to build a deep learning model that can ac
 ## Evaluation Matrix
 
 The performance of the classification model will be evaluated using a confusion matrix. The confusion matrix provides a summary of how well the model predicts different categories and helps identify the types of errors made by the classifier. It calculates True Positive (TP), True Negative (TN), False Positive (FP), and False Negative (FN) values for each class.
+
+## Installation
+
+```
+pip install -r requirements.txt
+```
+
+## Usage
+
+```
+streamlit run app.py
+```
+
+## Performance
+
+| Model Name                                              | Train Accuracy | Validation Accuracy | Test Accuracy |
+| ------------------------------------------------------- | -------------- | ------------------- | ------------- |
+| 3CNN (without Image Augmentation)                       | 0.9355         | 0.8916              | 0.9277        |
+| 3CNN (with Image Augmentation)                          | 0.9121         | 0.7046              | 0.6560        |
+| 7CNN (with Image Augmentation)                          | 0.9636         | 0.8816              | 0.9638        |
+| VGG16 Transfer Learning (with Image Augmentation)       | 0.8886         | 0.8876              | 0.9039        |
+| ResNet50 Transfer Learning (with Image Augmentation)    | 0.9171         | 0.93663             | 0.9618        |
+| DenseNet121 Transfer Learning (with Image Augmentation) | 0.9479         | 0.9342              | 0.9845        |
 
 ## Accuracy & Loss Graphs
 
